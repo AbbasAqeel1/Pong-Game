@@ -159,6 +159,7 @@ int main(void)
     // Main game loop
     while (!WindowShouldClose()) 
     {
+		framesCounter++;
         BeginDrawing();
         ClearBackground(Light_Purple);
         DrawText("Press Space to Pause the Game", 10, Screen_Height - 20, 20, LIGHTGRAY);
@@ -196,22 +197,24 @@ int main(void)
         if (!isPause)
         {
             ball.Update();
-            //Checking for collisions
-            if (CheckCollisionCircleRec(Vector2{ ball.x,ball.y }, ball.Radius,
-                Rectangle{ paddle1.GetX(),paddle1.GetY(),paddle1.GetWidth(),paddle1.GetHeight() }))
+
+            // Check collision with paddle1
+            Rectangle paddle1Rect = { paddle1.GetX(), paddle1.GetY(), paddle1.GetWidth(), paddle1.GetHeight() };
+            if (CheckCollisionCircleRec(Vector2{ ball.x, ball.y }, ball.Radius, paddle1Rect))
             {
+                // Reposition the ball to prevent it from going inside the paddle
+                ball.x = paddle1.GetX() + paddle1.GetWidth() + ball.Radius;
                 ball.Speed_x *= -1;
             }
 
-            if (CheckCollisionCircleRec(Vector2{ ball.x,ball.y }, ball.Radius,
-                Rectangle{ paddle2.GetX(),paddle2.GetY(),paddle2.GetWidth(),paddle2.GetHeight() }))
+            // Check collision with paddle2
+            Rectangle paddle2Rect = { paddle2.GetX(), paddle2.GetY(), paddle2.GetWidth(), paddle2.GetHeight() };
+            if (CheckCollisionCircleRec(Vector2{ ball.x, ball.y }, ball.Radius, paddle2Rect))
             {
+                // Reposition the ball
+                ball.x = paddle2.GetX() - ball.Radius;
                 ball.Speed_x *= -1;
             }
-        }
-        else
-        {
-            framesCounter++;
         }
         
 

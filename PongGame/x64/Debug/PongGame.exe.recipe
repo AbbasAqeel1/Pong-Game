@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\abbas\source\repos\PongGame\x64\Debug\PongGame.exe</FullPath>
+      <FullPath>C:\PongGame\x64\Debug\PongGame.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

@@ -1,10 +1,10 @@
 ﻿  Main.cpp
-C:\Users\abbas\source\repos\PongGame\Main.cpp(28,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\abbas\source\repos\PongGame\Main.cpp(28,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\abbas\source\repos\PongGame\Main.cpp(28,20): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\abbas\source\repos\PongGame\Main.cpp(60,30): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\abbas\source\repos\PongGame\Main.cpp(61,31): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\abbas\source\repos\PongGame\Main.cpp(110,61): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\abbas\source\repos\PongGame\Main.cpp(200,71): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\abbas\source\repos\PongGame\Main.cpp(206,71): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  PongGame.vcxproj -> C:\Users\abbas\source\repos\PongGame\x64\Debug\PongGame.exe
+C:\PongGame\Main.cpp(28,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\PongGame\Main.cpp(28,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\PongGame\Main.cpp(28,20): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\PongGame\Main.cpp(60,30): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\PongGame\Main.cpp(61,31): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\PongGame\Main.cpp(110,61): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\PongGame\Main.cpp(203,72): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\PongGame\Main.cpp(212,72): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  PongGame.vcxproj -> C:\PongGame\x64\Debug\PongGame.exe
